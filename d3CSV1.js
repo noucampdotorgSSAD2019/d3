@@ -3,7 +3,8 @@ window.onload = function() {
                                .attr("width",300)
                                .attr("height",200);                              
     
-    d3.csv("d3table.csv", function(error, data)
+    d3.csv("d3table.csv").
+    then(function(data)
     {
         console.log(data);
         var elements = svg.selectAll("rect")

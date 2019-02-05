@@ -10,7 +10,7 @@ window.onload = function() {
                                .attr("width",300)
                                .attr("height",200);                              
     
-    d3.json("http://localhost/d3/numbers.json").get(function(error,dataset)
+    d3.json("http://localhost/d3/numbers.json").then(function(dataset)
     {
         console.log(dataset);
         
